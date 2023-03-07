@@ -28,7 +28,7 @@ if os.path.exists(fileN):
         arr = list(filter(None, info.split("\n")))
         authorInfo = list(filter(None, arr[2].split()))
 
-        print('Author:', authorInfo[1], authorInfo[2])
+        print('Author:', authorInfo[1], authorInfo[2][1:-1])
         print("")
         #get the tree sha
         shaCommit = arr[0][5:]
