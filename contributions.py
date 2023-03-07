@@ -33,8 +33,6 @@ while True:
 
     timeCommit = authorInfo[3] 
 
-    ts = int('1284101485')
-
 # if you encounter a "year is out of range" error the timestamp
 # may be in milliseconds, try `ts /= 1000` in that case
     timeFormat = datetime.utcfromtimestamp(int(timeCommit)).strftime('%B %d, %Y')
